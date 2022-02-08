@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/searchFragment">
+
+    <fragment
+        android:id="@+id/searchFragment"
+        android:name="com.example.fastplaylistbuilder.search.SearchFragment"
+        android:label="SearchFragment" >
+        <action
+            android:id="@+id/action_search_to_results"
+            app:destination="@id/resultsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultsFragment"
+        android:name="com.example.fastplaylistbuilder.results.ResultsFragment"
+        android:label="ResultsFragment" >
+    <argument
+        android:name="searchQuery"
+        app:argType="string"
+        android:defaultValue="Frozen" />
+    </fragment>
+    <fragment
+        android:id="@+id/playlistFragment"
+        android:name="com.example.fastplaylistbuilder.playlist.PlaylistFragment"
+        android:label="PlaylistFragment" />
+    <fragment
+        android:id="@+id/suggestedFragment"
+        android:name="com.example.fastplaylistbuilder.suggested.SuggestedFragment"
+        android:label="SuggestedFragment" />
+
+<!--    <action-->
+<!--        android:id="@+id/toResultsFragment"-->
+<!--        app:destination="@+id/resultsFragment" />-->
+
+</navigation>

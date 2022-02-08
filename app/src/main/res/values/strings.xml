@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Fast Playlist Builder</string>
+    <string name="app_string">7b5ad139</string>
+
+    <!-- Search Fragment -->
+    <string name="search_header">Search for movies to add to your playlist</string>
+</resources>
